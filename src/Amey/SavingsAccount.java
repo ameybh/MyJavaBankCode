@@ -5,7 +5,7 @@ public class SavingsAccount extends Account {
 	private static int MIN_BALANCE_S =10_000;
 	private int withdrwalLimit = 25_000;
 	private int depositeLimit = 50_000;
-	Address address;
+	//Address address;
 	private String accountType = "SAVINGS ACCOUNT!";
 	
 	public String getAccountType() {
@@ -65,8 +65,8 @@ public class SavingsAccount extends Account {
 	{
 		System.out.println("**********YOUR ACCOUNT DETAILS***********");
 		System.out.println("Name :"+ user.getName() );
-		System.out.println("The account holder is from :" + address.getCity()+ " "+address.getState()+" "+address.getZipCode());
-		System.out.println("A/c Type: "+ getAccountType());
+		System.out.println("The account holder is from :" + user.getAddress().getCity()+ " "+user.getAddress().getState()+" "+user.getAddress().getZipCode());
+		System.out.println("A/c Type: "+ "SAVINGS ACCOUNT");
 		System.out.println("Account Balance :" + getAccountBalance());
 }
 	
@@ -74,7 +74,7 @@ public class SavingsAccount extends Account {
 		boolean flag =true;
 		
 		while(flag) {
-			System.out.println("What do you want to do?/n 1.Deposite /n 2.Withdraw /n3.check Balance /n4.Account Information /n5.Exit");
+			System.out.println("What do you want to do?/n 1.Deposite /n 2.Withdraw /n3.check Balance /n4.Exit");
 			int choice2 = sc.nextInt();
 			switch(choice2) 
 			{
@@ -109,13 +109,13 @@ public class SavingsAccount extends Account {
 					}
 				break;
 			case 3:{
-				System.out.println("abasd");
-				//getAccountData();
-				System.out.println("**********YOUR ACCOUNT DETAILS***********");
-				System.out.println("Name :"+ user.getName() );
-				System.out.println("The account holder is from :" + address.getCity()+ " "+address.getState()+" "+address.getZipCode());
-				System.out.println("A/c Type: "+ getAccountType());
-				System.out.println("Account Balance :" + getAccountBalance());
+				//System.out.println("abasd");
+				getAccountData();
+				//System.out.println("**********YOUR ACCOUNT DETAILS***********");
+				//System.out.println("Name :"+ user.getName() );
+				//System.out.println("The account holder is from :" + user.address.getCity()+ " "+address.getState()+" "+address.getZipCode());
+				//System.out.println("A/c Type: "+ getAccountType());
+				//System.out.println("Account Balance :" + getAccountBalance());
 			}
 				break;
 			case 4:

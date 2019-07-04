@@ -27,7 +27,17 @@ public class Address {
 		this.state = state;
 	}
 
-	
+	public void setAddress(String city,String state,int zipCode) 
+	{
+		this.city = city;
+		this.state = state;
+		this.zipCode = zipCode;
+	}
+	public String getAddress() 
+	{
+		String a = getCity()+getState();
+		return a;
+	}
 	
 	public int getZipCode() {
 		return zipCode;

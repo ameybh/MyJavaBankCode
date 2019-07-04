@@ -19,7 +19,7 @@ public class JavaMain {
 		address0.setState(sc.next());
 		System.out.println("Please provide your Pincode");
 		address0.setZipCode(sc.nextInt());
-		
+		user1.setAddress(address0);
 		System.out.println("Choose your option from below/n 1.Savings Account /n2.Salary Account /n3.Current Account /n");
 		int choice = sc.nextInt();
 		
